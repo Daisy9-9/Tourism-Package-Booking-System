@@ -11,9 +11,11 @@ public class Transportation {
     }
 
     public double getTransportCost() {
+
         return transportCost;
     }
     public String getTransportType(){
+
         return transportType;
     }
 }

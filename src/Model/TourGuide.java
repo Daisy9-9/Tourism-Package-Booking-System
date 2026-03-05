@@ -12,9 +12,11 @@ public class TourGuide {
     }
 
     public double getFeePerDay() {
+
         return feePerDay;
     }
     public String getGuideName(){
+
         return guideName;
     }
 }

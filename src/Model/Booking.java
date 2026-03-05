@@ -1,25 +1,34 @@
 package Model;
 
 public class Booking {
-    private int bookingId;
-    private Customer customer;
-    private TourPackage tourPackage;
-    private Transportation transportation;
-    private TourGuide tourGuide;
-    private int numberOfPeople;
+
+    private final int bookingId;
+    private final Customer customer;
+    private final TourPackage tourPackage;
+    private final Transportation transportation;
+    private final TourGuide tourGuide;
+    private final int numberOfPeople;
     private double totalPrice;
 
-    public Booking(int bookingId,Customer customer,TourPackage tourPackage,Transportation transportation, TourGuide tourGuide,int numberOfPeople){
+    public Booking(int bookingId, Customer customer, TourPackage tourPackage,
+                   Transportation transportation, TourGuide tourGuide, int numberOfPeople) {
+
         this.bookingId = bookingId;
         this.customer = customer;
         this.tourPackage = tourPackage;
-        this.transportation =transportation;
+        this.transportation = transportation;
         this.tourGuide = tourGuide;
         this.numberOfPeople = numberOfPeople;
     }
-    public Customer getCustomer(){
+
+    public int getBookingId() {
+        return bookingId;
+    }
+
+    public Customer getCustomer() {
         return customer;
     }
+
     public TourPackage getTourPackage() {
         return tourPackage;
     }
@@ -43,5 +52,4 @@ public class Booking {
     public double getTotalPrice() {
         return totalPrice;
     }
-
 }

@@ -1,11 +1,11 @@
 package Model;
 
 public class TourPackage {
-    private  int packageId;
-    private String packageName;
-    private String destination;
-    private double pricePerPerson;
-    private  int durationDays;
+    private final int packageId;
+    private final String packageName;
+    private final String destination;
+    private final double pricePerPerson;
+    private final int durationDays;
 
 
 
