@@ -116,19 +116,28 @@ public class Main {
 
         // Output
         System.out.println("\n=== Booking Summary ===");
-        System.out.println("Customer: " + customer.getName());
         System.out.println("Booking ID: " + booking.getBookingId());
+        System.out.println("\n========Customer Information======");
+        System.out.println("Customer: " + customer.getName());
         System.out.println("Customer Phone :" +customer.getPhone());
+
+        System.out.println("\n========Trip Details======");
         System.out.println("Destination: " + tourPackage.getDestination());
         System.out.println("Package: " + tourPackage.getPackageName());
         System.out.println("People: " + people);
-        System.out.println("Package Cost: $" + packageCost);
-        System.out.println("Discount: $" + discount);
         System.out.println("TransportationType :"+transport.getTransportType());
-        System.out.println("Transport Cost: $" + transport.getTransportCost());
         System.out.println("Tour Guide :"+guide.getGuideName());
+
+        System.out.println("\n========Payment Summary======");
+        System.out.println("Package Cost: $" + packageCost);
+        System.out.println("Transport Cost: $" + transport.getTransportCost());
         System.out.println("Guide Fee: $" + guideFee);
+        System.out.println("Discount: $" + discount);
+
+        System.out.println("\n=============================");
+
         System.out.println("Total Price: $" + booking.getTotalPrice());
+        System.out.println("\n=============================");
 
 
 
